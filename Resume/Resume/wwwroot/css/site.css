@@ -78,3 +78,11 @@ body {
   height: 60px;
   margin-bottom: 15px;
 }
+
+a.navbar-brand:hover {
+  font-size: 1.4rem;
+}
+
+.link-hover:hover {
+  font-size: 1.1rem;
+}
