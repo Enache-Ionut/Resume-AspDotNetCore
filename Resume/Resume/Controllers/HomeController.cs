@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Resume.Models;
+using System.Diagnostics;
 
 namespace Resume.Controllers
 {
@@ -22,6 +18,27 @@ namespace Resume.Controllers
     {
       return View();
     }
+
+    public IActionResult CurriculumVitae()
+    {
+      return View();
+    }
+
+    public IActionResult Projects()
+    {
+      return View();
+    }
+
+    public IActionResult About()
+    {
+      return View();
+    }
+
+    public IActionResult Contact()
+    {
+      return View();
+    }
+
 
     public IActionResult Privacy()
     {
