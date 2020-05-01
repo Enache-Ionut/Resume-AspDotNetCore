@@ -63,6 +63,7 @@ body {
   margin-bottom: 60px;
 }
 .footer {
+  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -74,7 +75,7 @@ body {
 /* Override standard css */
 
 .navbar {
-  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+  background: linear-gradient(-90deg, #16C0B0, #84CF6A);
   height: 60px;
   margin-bottom: 15px;
 }
