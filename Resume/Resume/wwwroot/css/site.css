@@ -81,6 +81,7 @@ body {
   background: linear-gradient(45deg, gray, black);
   height: 60px;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 a.navbar-brand:hover {
@@ -105,8 +106,8 @@ a.navbar-brand:hover {
 
 .squareBase {
   border-radius: 10%;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .information-cart {
@@ -115,17 +116,12 @@ a.navbar-brand:hover {
   display: inline-block;
 }
 
-  .information-cart:hover {
-    background: linear-gradient(black, silver);
-  }
-
-.information-cart-title {
-  font-size: 20px;
+.information-cart:hover {
+  background: linear-gradient(gray, silver);
 }
 
-.information-cart-body {
-  margin-top: 5px;
-  padding: 10px;
+.information-cart-title {
+  font-size: 22px;
 }
 
 .center {
@@ -149,12 +145,12 @@ a.navbar-brand:hover {
 }
 
 .profile-name {
-  font-size: 26px;
+  font-size: 30px;
   margin-top: 30px;
 }
 
 .profile-name-paragraph {
-  font-size: 48px;
+  font-size: 52px;
 }
 
 hr {
