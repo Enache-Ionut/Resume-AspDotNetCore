@@ -61,8 +61,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background: radial-gradient(white, white, silver);
+  background: url("../images/1691809.jpg") no-repeat fixed center;
+
 }
+
 .footer {
   background: linear-gradient(-90deg, #84CF6A, #16C0B0);
   position: absolute;
@@ -103,8 +105,8 @@ a.navbar-brand:hover {
 
 .squareBase {
   border-radius: 10%;
-  height: 300px;
-  width: 400px;
+  height: 100px;
+  width: 100px;
 }
 
 .information-cart {
@@ -118,7 +120,7 @@ a.navbar-brand:hover {
 }
 
 .information-cart-title {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .information-cart-body {
@@ -134,3 +136,27 @@ a.navbar-brand:hover {
   text-decoration: none !important;
 }
 
+.profile-image {
+  text-align: center;
+  display: block;
+  margin-top: 200px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.profile-name {
+  font-size: 26px;
+  margin-top: 30px;
+}
+
+.profile-name-paragraph {
+  font-size: 48px;
+}
+
+hr {
+  border-color: inherit;
+}

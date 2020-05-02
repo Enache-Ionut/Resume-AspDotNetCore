@@ -2,9 +2,20 @@
   ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div class="text-center layer">
   @*<h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+
+  <div class="profile">
+    <div class="profile-image">
+      <img class="profile-pic" src="~/images/profilePic.jpg" alt="Ionut Enache Stoian - Profile Picture" />
+    </div>
+    <div class="profile-name text-white">
+      <p class="profile-name-paragraph">IONUT ENACHE-STOIAN</p>
+      <hr class="text-white">
+      <p>FULL STACK WEB & DESKTOP - SOFTWARE ENGINEER</p>
+    </div>
+  </div>
 
   <div class="personal-information">
     @await Html.PartialAsync("_MyInformationPartial", "CV")
