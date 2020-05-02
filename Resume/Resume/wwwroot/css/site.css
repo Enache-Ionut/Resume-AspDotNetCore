@@ -102,8 +102,8 @@ a.navbar-brand:hover {
 
 .squareBase {
   border-radius: 10%;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 450px;
 }
 
 .information-cart {
@@ -123,4 +123,10 @@ a.navbar-brand:hover {
 
 .no-decoration {
   text-decoration: none !important;
+}
+
+.information-cart-body {
+  margin-top: 20px;
+  padding: 10px;
+
 }

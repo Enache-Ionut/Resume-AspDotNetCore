@@ -2,14 +2,26 @@
 
 <div class="information-cart squareBase">
   <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="CurriculumVitae">
-
     <div class="information-cart-title">
       <p>@Model</p>
     </div>
     <div class="information-cart-body">
-
+      @if (Model == "CV")
+      {
+        <i class="fa fa-address-card" aria-hidden="true" style="font-size:200px;"></i>
+      }
+      else if (Model == "Projects")
+      {
+        <i class="fa fa-briefcase" aria-hidden="true" style="font-size:200px"></i>
+      }
+      else if (Model == "About")
+      {
+        <i class="fa fa-info" aria-hidden="true" style="font-size:200px"></i>
+      }
+      else
+      {
+        <i class="fa fa-phone" aria-hidden="true" style="font-size:200px"></i>
+      }
     </div>
-
-
   </a>
 </div>
