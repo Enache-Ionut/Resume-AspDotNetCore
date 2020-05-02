@@ -92,3 +92,32 @@ a.navbar-brand:hover {
   text-align: center;
 
 }
+
+.personal-information {
+  margin-top: 200px;
+}
+
+.circleBase {
+  border-radius: 50%;
+}
+
+.my-information {
+  margin: 20px;
+  display: inline-block;
+  font-size: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: #16C0B0;
+}
+
+.my-information:hover {
+  background-color: #84CF6A;
+}
+
+.center {
+  vertical-align: middle;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
