@@ -81,9 +81,14 @@ body {
 }
 
 a.navbar-brand:hover {
-  font-size: 1.4rem;
+  opacity: 0.7;
 }
 
 .link-hover:hover {
-  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.footer-container {
+  text-align: center;
+
 }
