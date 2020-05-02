@@ -7,10 +7,10 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
 
   <div class="personal-information">
-    @await Html.PartialAsync("_MyInformationPartial")
-    @await Html.PartialAsync("_MyInformationPartial")
-    @await Html.PartialAsync("_MyInformationPartial")
-    @await Html.PartialAsync("_MyInformationPartial")
+    @await Html.PartialAsync("_MyInformationPartial", "CV")
+    @await Html.PartialAsync("_MyInformationPartial", "Projects")
+    @await Html.PartialAsync("_MyInformationPartial", "About")
+    @await Html.PartialAsync("_MyInformationPartial", "Contact")
   </div>
 
 
