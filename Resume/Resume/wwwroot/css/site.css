@@ -61,6 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: radial-gradient(white, white, silver);
 }
 .footer {
   background: linear-gradient(-90deg, #84CF6A, #16C0B0);
@@ -102,19 +103,27 @@ a.navbar-brand:hover {
 
 .squareBase {
   border-radius: 10%;
-  height: 350px;
-  width: 450px;
+  height: 300px;
+  width: 400px;
 }
 
 .information-cart {
   background: linear-gradient(#16C0B0, #84CF6A);
   margin: 50px;
   display: inline-block;
-  font-size: 70px;
 }
 
 .information-cart:hover {
   background: linear-gradient(#84CF6A, #16C0B0);
+}
+
+.information-cart-title {
+  font-size: 50px;
+}
+
+.information-cart-body {
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .center {
@@ -125,8 +134,3 @@ a.navbar-brand:hover {
   text-decoration: none !important;
 }
 
-.information-cart-body {
-  margin-top: 20px;
-  padding: 10px;
-
-}
