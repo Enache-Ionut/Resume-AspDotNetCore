@@ -1,7 +1,27 @@
 ﻿@model string
+@{
+  var actionName = string.Empty;
+  if (Model == "CV")
+  {
+    actionName = "CurriculumVitae";
+  }
+  else if (Model == "Projects")
+  {
+    actionName = "Projects";
+  }
+  else if (Model == "About")
+  {
+    actionName = "About";
+  }
+  else if (Model == "Contact")
+  {
+    actionName = "Contact";
+  }
+}
 
 <div class="information-cart squareBase">
-  <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="CurriculumVitae">
+
+  <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="@actionName">
     <div class="information-cart-title">
       <p>@Model</p>
     </div>
