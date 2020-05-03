@@ -5,6 +5,7 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-size: 36px;
 }
 
 /* Provide sufficient contrast against white background */
@@ -29,6 +30,7 @@ a {
 html {
   font-size: 16px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -38,6 +40,7 @@ html {
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -61,12 +64,12 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background: url("../images/1691809.jpg") no-repeat fixed center;
-
+  /*background: url("../images/1691809.jpg") no-repeat fixed center;*/
+  background-color: silver
 }
 
 .footer {
-  background: linear-gradient(45deg, gray, black);
+  background: linear-gradient(-90deg, #16C0B0, #84CF6A);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -78,10 +81,10 @@ body {
 /* Override standard css */
 
 .navbar {
-  background: linear-gradient(45deg, gray, black);
+  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
   height: 60px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 a.navbar-brand:hover {
@@ -96,7 +99,7 @@ a.navbar-brand:hover {
   text-align: center;
 }
 
-.social-media-margin{
+.social-media-margin {
   margin: 20px;
 }
 
@@ -111,13 +114,13 @@ a.navbar-brand:hover {
 }
 
 .information-cart {
-  background: linear-gradient(silver, black);
+  background: linear-gradient(#16C0B0, #84CF6A);
   margin: 20px;
   display: inline-block;
 }
 
 .information-cart:hover {
-  background: linear-gradient(gray, silver);
+  background: linear-gradient(#84CF6A, #16C0B0);
 }
 
 .information-cart-title {
@@ -145,12 +148,12 @@ a.navbar-brand:hover {
 }
 
 .profile-name {
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 30px;
 }
 
 .profile-name-paragraph {
-  font-size: 52px;
+  font-size: 64px;
 }
 
 hr {
