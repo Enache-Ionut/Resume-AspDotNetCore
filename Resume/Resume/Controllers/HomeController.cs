@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Resume.Models;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Resume.Controllers
@@ -16,7 +17,35 @@ namespace Resume.Controllers
 
     public IActionResult Index()
     {
-      return View();
+      var pageInfoViewModel = new List<PageInformationModel>()
+      {
+        new PageInformationModel
+        {
+          ActionName = "CurriculumVitae",
+          DisplayName = "CV",
+          IconClassName = "fa fa-address-card"
+        },
+        new PageInformationModel
+        {
+          ActionName = "Projects",
+          DisplayName = "Projects",
+          IconClassName = "fa fa-briefcase"
+        },
+        new PageInformationModel
+        {
+          ActionName = "About",
+          DisplayName = "About",
+          IconClassName = "fa fa-info"
+        },
+        new PageInformationModel
+        {
+          ActionName = "Contact",
+          DisplayName = "Contact",
+          IconClassName = "fa fa-phone"
+        }
+      };
+
+      return View(pageInfoViewModel);
     }
 
     public IActionResult CurriculumVitae()

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<PageInformationModel>
+
+@{
   ViewData["Title"] = "Home Page";
 }
 
@@ -18,10 +20,10 @@
   </div>
 
   <div class="personal-information">
-    @await Html.PartialAsync("_MyInformationPartial", "CV")
-    @await Html.PartialAsync("_MyInformationPartial", "Projects")
-    @await Html.PartialAsync("_MyInformationPartial", "About")
-    @await Html.PartialAsync("_MyInformationPartial", "Contact")
+    @foreach (var info in Model)
+    {
+      @await Html.PartialAsync("_MyInformationPartial", info)
+    }
   </div>
 
 

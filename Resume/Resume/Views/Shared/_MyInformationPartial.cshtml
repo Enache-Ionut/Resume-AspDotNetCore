@@ -1,47 +1,12 @@
-﻿@model string
-@{
-  var actionName = string.Empty;
-  if (Model == "CV")
-  {
-    actionName = "CurriculumVitae";
-  }
-  else if (Model == "Projects")
-  {
-    actionName = "Projects";
-  }
-  else if (Model == "About")
-  {
-    actionName = "About";
-  }
-  else if (Model == "Contact")
-  {
-    actionName = "Contact";
-  }
-}
+﻿@model PageInformationModel
 
 <div class="information-cart squareBase">
-
-  <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="@actionName">
+  <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="@Model.ActionName">
     <div class="information-cart-title">
-      <p>@Model</p>
+      <p>@Model.DisplayName</p>
     </div>
     <div class="information-cart-body">
-      @if (Model == "CV")
-      {
-        <i class="fa fa-address-card" aria-hidden="true" style="font-size:50px"></i>
-      }
-      else if (Model == "Projects")
-      {
-        <i class="fa fa-briefcase" aria-hidden="true" style="font-size:50px"></i>
-      }
-      else if (Model == "About")
-      {
-        <i class="fa fa-info" aria-hidden="true" style="font-size:50px"></i>
-      }
-      else
-      {
-        <i class="fa fa-phone" aria-hidden="true" style="font-size:50px"></i>
-      }
+      <i class="@Model.IconClassName" aria-hidden="true" style="font-size:50px"></i>
     </div>
   </a>
 </div>
