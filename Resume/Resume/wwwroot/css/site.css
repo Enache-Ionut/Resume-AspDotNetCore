@@ -69,6 +69,22 @@ body {
   /*background-color: white;*/
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .footer {
   background: linear-gradient(-90deg, #16C0B0, #84CF6A);
   position: absolute;
@@ -172,4 +188,42 @@ hr {
 
 .link-color:hover {
   color: greenyellow;
+}
+
+input {
+  max-width: 300px;
+}
+
+textarea {
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.btn {
+  /*font-size: 17px;
+  padding: 7px 20px;*/
+  -ms-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.btn-form {
+  height: 50px;
+  width: 150px;
+  font-size: 24px;
+}
+
+.form-control {
+  font-size: 17px;
+  padding: 20px 15px;
+  /*For older browsers compatibility -ms-border-radius: 9px;*/
+  -ms-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 50px;
 }

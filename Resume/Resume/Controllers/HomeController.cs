@@ -69,7 +69,9 @@ namespace Resume.Controllers
     }
 
 
-    public IActionResult Privacy()
+    [HttpPost]
+    [Route("/Home/SendMessage")]
+    public IActionResult SendMessage()
     {
       return View();
     }
