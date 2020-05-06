@@ -64,6 +64,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-size: 24px;
   /*background: url("../images/1691809.jpg") no-repeat fixed center;*/
   /*background-color: white;*/
 }
@@ -158,4 +159,17 @@ a.navbar-brand:hover {
 
 hr {
   border-color: inherit;
+}
+
+.section-title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.link-color {
+  color: limegreen;
+}
+
+.link-color:hover {
+  color: greenyellow;
 }
