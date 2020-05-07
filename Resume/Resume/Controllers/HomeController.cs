@@ -65,15 +65,23 @@ namespace Resume.Controllers
 
     public IActionResult Contact()
     {
-      return View();
+      var contactModel = new Contact();
+      return View(contactModel);
     }
-
 
     [HttpPost]
     [Route("/Home/SendMessage")]
-    public IActionResult SendMessage()
+    public IActionResult SendMessage(Contact contactModel)
     {
-      return View();
+      if (!ModelState.IsValid)
+      {
+        return View("Contact", contactModel);
+      }
+
+      //TODO Send a email with the data from contactModel to my personal email
+
+
+      return RedirectToAction("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
