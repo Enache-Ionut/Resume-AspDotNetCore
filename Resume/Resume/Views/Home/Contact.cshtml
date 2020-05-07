@@ -13,6 +13,7 @@
     <div class="col-md-10">
       <input asp-for="Email" class="form-control" />
     </div>
+    <span class="text-danger" asp-validation-for="Email"></span>
   </div>
 
   <div class="form-group">
@@ -20,6 +21,7 @@
     <div class="col-md-10">
       <input asp-for="Subject" class="form-control" />
     </div>
+    <span class="text-danger" asp-validation-for="Subject"></span>
   </div>
 
   <div class="form-group">
@@ -27,6 +29,7 @@
     <div class="col-md-10">
       <textarea asp-for="Message" class="form-control"></textarea>
     </div>
+    <span class="text-danger" asp-validation-for="Message"></span>
   </div>
 
   <div class="form-group">
