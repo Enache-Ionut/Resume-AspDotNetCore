@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EmailService;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Resume.Models;
 using System.Collections.Generic;
@@ -9,10 +10,12 @@ namespace Resume.Controllers
   public class HomeController : Controller
   {
     private readonly ILogger<HomeController> _logger;
+    private readonly IEmailSender _emailSender;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IEmailSender emailSender)
     {
       _logger = logger;
+      _emailSender = emailSender;
     }
 
     public IActionResult Index()
@@ -65,13 +68,27 @@ namespace Resume.Controllers
 
     public IActionResult Contact()
     {
-      return View();
+      var contactModel = new Contact();
+      return View(contactModel);
     }
 
-
-    public IActionResult Privacy()
+    [HttpPost]
+    [Route("/Home/SendMessage")]
+    public IActionResult SendMessage(Contact contactModel)
     {
-      return View();
+      if (!ModelState.IsValid)
+      {
+        return View("Contact", contactModel);
+      }
+
+      //TODO Send a email with the data from contactModel to my personal email
+      var email = "@gmail.com";
+      var message = new Message(new string[] { email },
+        contactModel.Subject, $"From: {email}\n\n" + "Message" + contactModel.Message);
+
+      _emailSender.SendEmail(message);
+
+      return RedirectToAction("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,8 +1,57 @@
-﻿
+﻿@model Contact
+
 @{
-    ViewData["Title"] = "Contact";
+  ViewData["Title"] = "Contact";
 }
 
-<h1>Contact</h1>
+<h1 class="section-title">Contact</h1>
 
-<p>My contact information as email, LinkedIn, Twitter and Github</p>
+<form method="post" asp-controller="Home" asp-action="SendMessage">
+
+  <div class="form-group">
+    <label asp-for="Email" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+      <input asp-for="Email" class="form-control" />
+    </div>
+    <span class="text-danger" asp-validation-for="Email"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Subject" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+      <input asp-for="Subject" class="form-control" />
+    </div>
+    <span class="text-danger" asp-validation-for="Subject"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Message" class="col-md-2"></label>
+    <div class="col-md-10">
+      <textarea asp-for="Message" class="form-control"></textarea>
+    </div>
+    <span class="text-danger" asp-validation-for="Message"></span>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <input type="submit" value="Send" class="btn btn-primary btn-form" />
+    </div>
+  </div>
+
+</form>
+
+<p>You can also write me on:</p>
+<p>
+  <a class="link-hover social-media-margin" href="https://twitter.com/ionutenache_" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-twitter" style="font-size:30px"> Twitter</i>
+  </a>
+</p>
+<p>
+  <a class="link-hover social-media-margin" href="https://www.linkedin.com/in/ionut-enache-stoian-21341b180/" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-linkedin-square" style="font-size:30px"> LinkedIn</i>
+  </a>
+</p>
+
+@section Scripts {
+  <partial name="_ValidationScriptsPartial" />
+}
