@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using EmailService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +19,15 @@ namespace Resume
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      // Include Email Service
+      var emailConfig = Configuration
+        .GetSection("EmailConfiguration")
+        .Get<EmailConfiguration>();
+
+      services.AddSingleton(emailConfig);
+
+      services.AddScoped<IEmailSender, EmailSender>();
+
       services.AddControllersWithViews();
     }
 
