@@ -5,7 +5,7 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 /* Provide sufficient contrast against white background */
@@ -28,12 +28,12 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -64,7 +64,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  font-size: 24px;
+  font-size: 18px;
   /*background: url("../images/1691809.jpg") no-repeat fixed center;*/
   /*background-color: white;*/
 }
@@ -101,7 +101,7 @@ h6,
   background: linear-gradient(-90deg, #84CF6A, #16C0B0);
   height: 60px;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 a.navbar-brand:hover {
@@ -209,7 +209,7 @@ textarea {
 .btn-form {
   height: 50px;
   width: 150px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .form-control {
