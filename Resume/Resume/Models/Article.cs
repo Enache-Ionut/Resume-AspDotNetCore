@@ -1,6 +1,6 @@
 ﻿namespace Resume.Models
 {
-  public class ArticleModel
+  public class Article
   {
     public string Title { get; set; }
     public Author Author { get; set; }

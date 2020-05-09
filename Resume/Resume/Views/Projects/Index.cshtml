@@ -1,7 +1,14 @@
-﻿
+﻿@model IEnumerable<Article>
+
 @{
   ViewData["Title"] = "Index";
 }
 
-<h1>Projects</h1>
+<h1 class="section-title">Projects</h1>
 
+<div>
+  @foreach (var article in Model)
+  {
+    @await Html.PartialAsync("_ArticlePartial", article)
+  }
+</div>
