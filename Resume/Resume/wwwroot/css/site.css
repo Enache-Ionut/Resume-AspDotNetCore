@@ -228,14 +228,14 @@ form {
   margin-bottom: 50px;
 }
 
-.article-section {
-  margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
+.article-card {
+  margin: 50px 0;
+  padding: 20px 20px 20px 0;
   background: linear-gradient(#16C0B0, #84CF6A);
   display: flex;
 }
 
-.article-section:hover {
+.article-card:hover {
   background: linear-gradient(#84CF6A, #16C0B0);
 }
 
@@ -245,14 +245,16 @@ form {
 }
 
 .article-image {
-  display: inline-block;
   max-width: 100%;
   height: auto;
+  position: absolute;
+  top: 20%;
 }
 
 .article-body-info {
   display: block;
   position: relative;
+  padding: 0 0 0 50px;
 }
 
 .article-authore-text {
