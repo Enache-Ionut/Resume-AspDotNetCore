@@ -1,9 +1,12 @@
 ﻿@model Article
 
-<div>
-  <p>@Model.Title</p>
-  <p>
-    <img src="@Model.Author.ProfileImage" /> @Model.Author.Name @Model.Date
-  </p>
-  <p>Short Description</p>
+<div class="article-section text-white">
+  <div class="article-image-section col-md-3">
+    <img class="article-image" src="@Model.Image" alt="Article Image" />
+  </div>
+  <div class="article-body-info col-md-9">
+    <h2><strong>@Model.Title</strong></h2>
+    <p class="article-authore-text"><img class="article-authore-image" src="@Model.Author.ProfileImage" alt="Author profile picture" /> @Model.Author.Name - @Model.Date</p>
+    <p>@Model.ShortDescription</p>
+  </div>
 </div>
