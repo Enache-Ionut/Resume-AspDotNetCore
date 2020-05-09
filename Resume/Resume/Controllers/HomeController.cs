@@ -56,11 +56,6 @@ namespace Resume.Controllers
       return View();
     }
 
-    public IActionResult Projects()
-    {
-      return View();
-    }
-
     public IActionResult About()
     {
       return View();
