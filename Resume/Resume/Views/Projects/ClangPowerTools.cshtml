@@ -1,13 +1,92 @@
-﻿
+﻿@model Article
+
 @{
   ViewData["Title"] = "Clang Power Tools";
 }
 
-<h1>Clang Power Tools</h1>
+<div class="article-section">
+  <div class="article-title">
+    @await Html.PartialAsync("_ArticleTitlePartial", @Model)
+  </div>
+  <div class="article-body">
+    <p>
+      It's been a while since I started to be a software engineer at
+      <a class="link-color" href="https://www.caphyon.com/" target="_blank" rel="noopener noreferrer">Caphyon</a>.
+      Most of the time my attention was focused on developing tools to increase team productivity.
+      This is how Clang Power Tools started. Me, at the beginning a developer without experience, and an awesome team.
+    </p>
 
+    <h1 class="section-title">What it is</h1>
 
+    <p>
+      Clang Power Tools is a Visual Studio extension helping Visual Studio C++ developers leverage Clang/LLVM tools (clang++, clang-tidy and clang-format), in order to perform various code transformations and fixes like modernizing code to C++ 11 / 14 / 17 and finding subtle latent bugs with its static analyzer and C++ Core Guidelines checks.
+    </p>
+    <p>
+      Windows has traditionally been an MSVC-only world. Microsoft has made great strides in improving this in recent years, first with the now defunct Clang/C2 in 2016 and then with ensuring VC++ STL libraries compile against Clang/LLVM. In early 2017, a small group of Caphyon developers volunteered for an internal effort to modernize our 15 year old code-base, consisting of roughly 3 million lines of C++ code. We got inspired to do this by CppCon 2016 talks about Clang/LLVM and its modernizers.
+    </p>
 
+    <h1 class="section-title">Main features</h1>
 
+    <p>
+      A few reasones why to use this extension can be:
+      <ol>
+        <li>
+          Quick access from anywhere in Visual Studio and great integration with the IDE.
+          <img src="~/images/clang-menus.png" alt="Clang Power Tools Menu" />
 
+        </li>
 
+        <li>
+          Auto-format source file on save using Clang Format, configurable style options, file extension rules.
+          <img src="~/images/clang-format.png" alt="Clang Power Tools Format Settings" />
+        </li>
 
+        <li>
+          Customize the tool’s behavior, as well as the clang++ compilation flags, checks, clang-tidy and even more.
+          <img src="~/images/clang-compile.png" alt="Clang Power Tools Compile Settings" />
+
+        </li>
+
+        <li>
+          Powerful clang-tidy and clang-analyzer checks. Perform large scale refactorings, called modernizers.
+          <img src="~/images/clang-tidy.png" alt="Clang Power Tools Tidy Settings" />
+        </li>
+
+        <li>
+          Quickly install side-by-side multiple LLVM versions and select which one you want to use.
+          <img src="~/images/clang-llvm.png" alt="Clang Power Tools LLVM Instalation" />
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      After the VS Extension effort began, we open sourced the project on
+      <a class="link-color" href="https://github.com/Caphyon/clang-power-tools" target="_blank" rel="noopener noreferrer">GitHub</a>
+      and soon afterward it had its debut at CppCon 2017. Development has ramped up since then, with major improvements in both the backend and user interface.
+    </p>
+
+    <h1 class="section-title">Social Media</h1>
+
+    <p>If you want to learn more about Clang Power Tools, well we are everywhere.</p>
+    <p>
+      <a class="link-hover social-media-margin link-color" href="https://clangpowertools.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-globe" style="font-size:30px"> Clang Power Tools Website</i>
+      </a>
+    </p>
+    <p>
+      <a class="link-hover social-media-margin link-color" href="https://twitter.com/ClangPowerTools" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter" style="font-size:30px"> Twitter</i>
+      </a>
+    </p>
+    <p>
+      <a class="link-hover social-media-margin link-color" href="https://www.facebook.com/ClangPowerTools" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook" style="font-size:30px"> Facebook</i>
+      </a>
+    </p>
+    <p>
+      <a class="link-hover social-media-margin link-color" href="https://github.com/Caphyon/clang-power-tools" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github" style="font-size:30px"> Github</i>
+      </a>
+    </p>
+  </div>
+</div>
