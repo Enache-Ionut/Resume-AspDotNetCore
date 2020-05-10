@@ -6,7 +6,13 @@
   </div>
   <div class="article-body-info col-md-9">
     <h2><strong>@Model.Title</strong></h2>
-    <p class="article-authore-text"><img class="article-authore-image" src="@Model.Author.ProfileImage" alt="Author profile picture" /> @Model.Author.Name - @Model.Date</p>
+    <p class="article-authore-text">
+      <a href="@Model.Author.Twitter" class="text-white" target="_blank" rel="noopener noreferrer">
+        <img class="article-authore-image" src="@Model.Author.ProfileImage" alt="Author profile picture" />
+        <strong>@Model.Author.Name</strong>
+      </a>
+      - @Model.Date
+    </p>
     <p>@Model.ShortDescription</p>
   </div>
 </div>
