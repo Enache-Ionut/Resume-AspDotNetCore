@@ -24,24 +24,28 @@ namespace Resume.Controllers
       {
         new PageInformationModel
         {
+          ControllerName = "Home",
           ActionName = "CurriculumVitae",
           DisplayName = "CV",
           IconClassName = "fa fa-address-card"
         },
         new PageInformationModel
         {
-          ActionName = "Projects",
+          ControllerName = "Projects",
+          ActionName = "Index",
           DisplayName = "Projects",
           IconClassName = "fa fa-briefcase"
         },
         new PageInformationModel
         {
+          ControllerName = "Home",
           ActionName = "About",
           DisplayName = "About",
           IconClassName = "fa fa-info"
         },
         new PageInformationModel
         {
+          ControllerName = "Home",
           ActionName = "Contact",
           DisplayName = "Contact",
           IconClassName = "fa fa-phone"

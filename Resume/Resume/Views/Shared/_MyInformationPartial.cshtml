@@ -1,7 +1,7 @@
 ﻿@model PageInformationModel
 
 <div class="information-cart squareBase">
-  <a class="text-white center no-decoration" asp-area="" asp-controller="Home" asp-action="@Model.ActionName">
+  <a class="text-white center no-decoration" asp-area="" asp-controller="@Model.ControllerName" asp-action="@Model.ActionName">
     <div class="information-cart-title">
       <p>@Model.DisplayName</p>
     </div>
