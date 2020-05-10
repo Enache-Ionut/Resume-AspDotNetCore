@@ -1,0 +1,11 @@
+﻿@model Article
+
+<p class="h1 section-title">@Model.Title</p>
+<p class="article-authore-text">
+  <a href="@Model.Author.Twitter" target="_blank" rel="noopener noreferrer">
+    <img class="article-authore-image" src="@Model.Author.ProfileImage" alt="Author profile picture" />
+    <strong>@Model.Author.Name</strong>
+  </a> - @Model.Date
+</p>
+
+

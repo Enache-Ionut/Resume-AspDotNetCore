@@ -266,3 +266,10 @@ form {
   width: 36px;
   border-radius: 50%;
 }
+
+.article-title {
+  margin: 70px 0;
+  text-align: center;
+}
+
+

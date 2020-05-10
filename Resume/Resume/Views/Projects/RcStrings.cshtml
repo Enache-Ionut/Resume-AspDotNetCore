@@ -1,7 +1,15 @@
-﻿
+﻿@model Article
 @{
   ViewData["Title"] = "RC Strings";
 }
 
-<h1>RC Strings</h1>
+<div class="article-section">
+  <div class="article-title">
+    @await Html.PartialAsync("_ArticleTitlePartial", @Model)
+  </div>
+  <div class="article-body">
+    <p>Article Content</p>
+  </div>
+</div>
+
 
