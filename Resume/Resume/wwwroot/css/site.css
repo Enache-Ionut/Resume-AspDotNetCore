@@ -64,7 +64,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  font-size: 18px;
+  font-size: 20px;
   /*background: url("../images/1691809.jpg") no-repeat fixed center;*/
   /*background-color: white;*/
 }
@@ -136,9 +136,9 @@ a.navbar-brand:hover {
   display: inline-block;
 }
 
-.information-cart:hover {
-  background: linear-gradient(#84CF6A, #16C0B0);
-}
+  .information-cart:hover {
+    background: linear-gradient(#84CF6A, #16C0B0);
+  }
 
 .information-cart-title {
   font-size: 22px;
@@ -177,7 +177,7 @@ hr {
   border-color: inherit;
 }
 
-.section-title{
+.section-title {
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -186,9 +186,9 @@ hr {
   color: limegreen;
 }
 
-.link-color:hover {
-  color: greenyellow;
-}
+  .link-color:hover {
+    color: greenyellow;
+  }
 
 input {
   max-width: 300px;
@@ -226,4 +226,43 @@ textarea {
 
 form {
   margin-bottom: 50px;
+}
+
+.article-card {
+  margin: 50px 0;
+  padding: 20px 20px 20px 0;
+  background: linear-gradient(#16C0B0, #84CF6A);
+  display: flex;
+}
+
+.article-card:hover {
+  background: linear-gradient(#84CF6A, #16C0B0);
+}
+
+.article-image-section {
+  display: block;
+  position: relative;
+}
+
+.article-image {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+}
+
+.article-body-info {
+  display: block;
+  position: relative;
+  padding: 0 0 0 50px;
+}
+
+.article-authore-text {
+  font-size: 18px;
+}
+
+.article-authore-image {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
 }
