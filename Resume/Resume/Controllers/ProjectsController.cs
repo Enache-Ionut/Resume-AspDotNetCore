@@ -6,11 +6,9 @@ namespace Resume.Controllers
 {
   public class ProjectsController : Controller
   {
-    public ProjectsController()
-    {
-    }
+    private List<Article> articles;
 
-    public IActionResult Index()
+    public ProjectsController()
     {
       var author = new Author()
       {
@@ -19,7 +17,7 @@ namespace Resume.Controllers
         Twitter = "https://twitter.com/ionutenache_"
       };
 
-      var articles = new List<Article>()
+      articles = new List<Article>()
       {
         new Article()
         {
@@ -42,18 +40,21 @@ namespace Resume.Controllers
           ActionName = "RcStrings"
         },
       };
+    }
 
+    public IActionResult Index()
+    {
       return View(articles);
     }
 
     public IActionResult ClangPowerTools()
     {
-      return View();
+      return View(articles[0]);
     }
 
     public IActionResult RcStrings()
     {
-      return View();
+      return View(articles[1]);
     }
 
   }

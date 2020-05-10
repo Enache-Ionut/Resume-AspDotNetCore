@@ -183,12 +183,12 @@ hr {
 }
 
 .link-color {
-  color: limegreen;
+  color: green;
 }
 
-  .link-color:hover {
-    color: greenyellow;
-  }
+.link-color:hover {
+  color: limegreen
+}
 
 input {
   max-width: 300px;
@@ -265,4 +265,9 @@ form {
   height: 36px;
   width: 36px;
   border-radius: 50%;
+}
+
+.article-title {
+  margin: 70px 0;
+  text-align: center;
 }

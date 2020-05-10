@@ -1,7 +1,49 @@
-﻿
+﻿@model Article
 @{
   ViewData["Title"] = "RC Strings";
 }
 
-<h1>RC Strings</h1>
+<div class="article-section">
+  <div class="article-title">
+    @await Html.PartialAsync("_ArticleTitlePartial", @Model)
+  </div>
+  <div class="article-body">
 
+    <p>
+      This project represents my first published application as a junior developer at
+      <a class="link-color" href="https://www.caphyon.com/" target="_blank" rel="noopener noreferrer">Caphyon</a>.
+      The entire project was developed during my internship in 2016 and modified one year later by a new intern from our internship program.
+      In 2017 lots of improvements and bug fixes were made. This year was also my first year as a mentor in the internship program.
+      It is a project born from the
+      <a class="link-color" href="https://www.advancedinstaller.com/" target="_blank" rel="noopener noreferrer">Advanced Installer</a>
+      team's needs. It was focused on developing, in the beginning, an internal tool for increasing
+      the productivity of the team. Later on, the tool was published for external use.
+    </p>
+
+    <p>
+      RC Strings is a Visual Studio Extension that allows you to add strings to RC (Win32 projects) string table from the Context Menu of Code Editor.
+    </p>
+    <p>
+      💡 You can download and install the RC Strings extension from
+      <a class="link-color" href="https://marketplace.visualstudio.com/items?itemName=caphyon.RCStrings" target="_blank" rel="noopener noreferrer">Visual Studio Marketplace</a>
+      or you can take a look at the project on
+      <a class="link-color" href="https://github.com/Caphyon/rc-strings" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+
+    <p>
+      The main advantages which RC Strings brings are:
+      <ol>
+        <li>Speed up the development process</li>
+        <li>Fill all the IDs gaps from your resource file</li>
+        <li>Minimizes the possibility of conflicts with team members when all are working on the same file</li>
+      </ol>
+    </p>
+
+    <h1 class="section-title">How to use</h1>
+
+    <p>This is a straight forward Visual Studio Extension regarding the usage. You just need to select the string you want to add to RC and choose Resource Strings->Add String from Context Menu.</p>
+    <p>
+      <img class="gif" src="~/images/rc_strings.gif" alt="RC Strings Gif" />
+    </p>
+  </div>
+</div>

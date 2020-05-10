@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Article>
 
 @{
-  ViewData["Title"] = "Index";
+  ViewData["Title"] = "Projects";
 }
 
 <h1 class="section-title">Projects</h1>
@@ -9,6 +9,6 @@
 <div>
   @foreach (var article in Model)
   {
-    @await Html.PartialAsync("_ArticlePartial", article)
+    @await Html.PartialAsync("_ArticleCardPartial", article)
   }
 </div>
