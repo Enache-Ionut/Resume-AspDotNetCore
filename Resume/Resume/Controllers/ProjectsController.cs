@@ -38,6 +38,8 @@ namespace Resume.Controllers
           Date = "July 4, 2016",
           ShortDescription = "This is a Visual Studio Extension which enables you to add strings to RC (Win32 projects) string table from the Context Menu of Code Editor. Speed up the development process and it's filling all the IDs gaps from your resource file. Also, it minimizes the possibility of conflicts with team members when all are working on the same file.",
           Image = "/images/articleImage.png",
+          ControllerName = "Projects",
+          ActionName = "RcStrings"
         },
       };
 
@@ -45,6 +47,11 @@ namespace Resume.Controllers
     }
 
     public IActionResult ClangPowerTools()
+    {
+      return View();
+    }
+
+    public IActionResult RcStrings()
     {
       return View();
     }
