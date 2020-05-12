@@ -112,6 +112,23 @@ a.navbar-brand:hover {
   opacity: 0.7;
 }
 
+.link-color {
+  color: green;
+}
+
+.link-color:hover {
+  color: limegreen
+}
+
+.link-black {
+  color: black;
+}
+
+.link-black:hover {
+  color: black;
+}
+
+
 .footer-container {
   text-align: center;
 }
@@ -173,6 +190,10 @@ a.navbar-brand:hover {
   font-size: 64px;
 }
 
+.profile-name-CV {
+  font-size: 32px;
+}
+
 hr {
   border-color: inherit;
 }
@@ -180,14 +201,6 @@ hr {
 .section-title {
   margin-top: 50px;
   margin-bottom: 20px;
-}
-
-.link-color {
-  color: green;
-}
-
-.link-color:hover {
-  color: limegreen
 }
 
 input {
@@ -274,4 +287,12 @@ form {
 
 li {
   margin: 20px 0;
+}
+
+.CV-section {
+  margin-top: 100px;
+}
+
+.cv-contacts {
+  margin-top: 100px;
 }
