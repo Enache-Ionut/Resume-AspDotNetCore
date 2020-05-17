@@ -291,8 +291,32 @@ li {
 
 .CV-section {
   margin-top: 100px;
+  width: 100%;
 }
 
 .cv-contacts {
   margin-top: 100px;
+}
+
+.cv-left-panel {
+  padding: 10px;
+  background: linear-gradient(#16C0B0, #84CF6A);
+  height: 100%;
+  margin: 0;
+  display: inline-block;
+  width: 30%;
+  min-width: 320px;
+}
+
+.cv-right-panel {
+  padding: 10px;
+  height: 100%;
+  margin: 0;
+  display: inline-block;
+  width: 69%;
+}
+
+.cv-section-title {
+  padding: 10px;
+  background: linear-gradient(90deg, #84CF6A, #16C0B0);
 }
